@@ -1,3 +1,10 @@
+let pass = prompt("Enter Admin Password");
+
+if (pass !== "admin@password@india@9163") {
+  alert("Wrong Password ❌");
+  window.location.href = "index.html";
+}
+
 let showTicket=document.getElementById("showTicketInCount")
 let showIssue=document.getElementById("showIssueRaisedInCount")
 let showResolved=document.getElementById("showIssueResolvedInCount")
