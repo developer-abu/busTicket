@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | ZengiRide</title>
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body class="m-0 p-0 box-border">
+    <h1 class="text-5xl font-[Poppins] text-center bg-amber-500">Admin Dashboard</h1>
+
+    <div class="flex gap-4 w-screen h-50 justify-around  items-center font-[Poppins]  text-white">
+        <div class="bg-blue-400 h-18 w-28 rounded-lg text-center">
+<p>Ticket</p>
+<p id="showTicketInCount" class="text-center text-black font-[Poppins]"></p>
+        </div>
+        <div class="bg-red-500 h-18 w-28 rounded-lg text-center">
+<p>Issue Raised</p>
+<p id="showIssueRaisedInCount" class="text-center text-black font-[Poppins]"></p>
+        </div>
+        <div class="bg-green-400 h-18 w-28 rounded-lg text-center">
+<p>Issue Resolved</p>
+<p id="showIssueResolvedInCount" class="text-center text-black font-[Poppins]"></p>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+
+    <div  class="w-screen flex justify-between gap-5 font-[Poppins] text-center text-white">
+
+        <div class="w-[33%] bg-blue-400 rounded-lg" id="ticketListContainer">
+            <h2 class="font-bold border-2 border-black rounded-lg">Tickets List</h2>
+            <!-- <p class=" border-2 border-black mt-2"></p> -->
+        </div>
+        <div class="w-[33%] bg-red-500 rounded-lg" id="issueListContainer">
+            <h2 class="font-bold border-2 border-black rounded-lg">Issue Raised List</h2>
+            <!-- <p class=" border-2 border-black mt-2"></p> -->
+          
+        </div>
+        <div class="w-[33%] bg-green-400 rounded-lg" id="resolvedListContainer">
+            <h2 class="font-bold border-2 border-black rounded-lg">Issue Resolved</h2>
+          <!-- <p class=" border-2 border-black mt-2"></p> -->
+        </div>
+
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

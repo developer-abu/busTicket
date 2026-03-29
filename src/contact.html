@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link href="./output.css" rel="stylesheet">
+</head>
+<body class="h-screen bg-[#FBD6A5] m-0 p-0 box-border overflow-x-hidden">
+
+    <div class="grid place-items-center h-screen w-full">
+        <div class="w-auto h-auto p-5 border rounded-2xl bg-amber-100">
+<form  action="https://formspree.io/f/xlgoearj" method="POST" id="contactForm">
+
+<label for="name" class="font-[Poppins] text-2xl">Name</label> <br>
+
+<input type="text" id="name" name="Name" class="border rounded-lg" > <br>
+<label for="email" class="font-[Poppins] text-2xl">Email</label> <br>
+<input type="email" id="email" name="Email" class="border rounded-lg" > <br>
+<label for="message" class="font-[Poppins] text-2xl">Type Your Message</label> <br>
+<textarea name="User Message" id="message" class="border rounded-lg resize-none w-full h-55 uppercase"></textarea>
+
+<button type="submit" class="ml-20 mt-5 text-2xl bg-green-400 px-2 rounded-2xl text-black transition duration-200 delay-75 hover:bg-linear-to-r hover:from-amber-400 hover:to-orange-800 
+hover:text-white relative left-[15%]">Submit</button>
+</form>
+
+        </div>
+
+    </div>
+<p class="bg-amber-400 text-2xl text-black font-[Poppins] text-center mt-3" id="show"></p>
+<script>
+
+let showMessage = document.getElementById("show")
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function(e) {
+e.preventDefault(); // 🚫 redirect বন্ধ
+
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    showMessage.innerText="Message sent successfully ✅"
+  
+    form.reset(); // 🔥 form reset
+  } else {
+      showMessage.innerText="Something went wrong ❌"
+  
+  }
+});
+</script>
+
+</body>
+</html>

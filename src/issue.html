@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise your Issue</title>
+        <link href="./output.css" rel="stylesheet">
+</head>
+<body class="h-screen bg-[#FBD6A5] m-0 p-0 box-border overflow-x-hidden">
+
+<div  class="grid place-items-center h-screen w-full">
+
+    <div class="w-auto h-auto p-5 border rounded-2xl bg-amber-100" id="childDIV">
+
+<form action="" id="form">
+
+    <label for="name" class="font-[Poppins] text-2xl">Name</label>
+<br>
+<input id="name" class="border font-[Poppins] text-2xl rounded-2xl" type="text" id="name" required> 
+<br>
+    <label class="font-[Poppins] text-2xl" for="email">Email</label>
+<br>
+<input id="email" class="border font-[Poppins] text-2xl rounded-2xl" type="email" required>
+<br>
+<label class="font-[Poppins] text-2xl" for="selectIssue">Select Your Issue</label> <br>
+<select class="border font-[Poppins] text-2xl rounded-2xl" name="" id="selectIssue" required>
+    <option value="select" selected>Select Issue</option>
+<option value="paymentFail">Payment Failure</option>
+<option value="bookingFail">Booking Failed but Money Deducted</option>
+<option value="ticketNotReceived">Ticket Not Received</option>
+<option value="cancellationIssue">Cancellation Issue</option>
+<option value="refundDelay">Refund Not Received / Delayed</option>
+<option value="wrongBooking">Wrong Booking Details</option>
+<option value="seatIssue">Seat Not Allotted / Changed</option>
+<option value="busDelay">Bus Delay / Timing Issue</option>
+<option value="busCancelled">Bus Cancelled</option>
+<option value="driverIssue">Driver / Staff Misbehavior</option>
+<option value="boardingIssue">Boarding Point Issue</option>
+<option value="websiteBug">Website / App Technical Issue</option>
+<option value="loginIssue">Login / Account Problem</option>
+<option value="offerIssue">Coupon / Offer Not Applied</option>
+<option value="other">Other Issue</option>
+</select>
+<br>
+<label class="font-[Poppins] text-2xl" for="issueDescription">Describe Issue</label>
+<br>
+<textarea id="textarea" class="border resize-none rounded-lg  indent-3.75 w-full h-55 uppercase" name="" id="issueDescription"></textarea>
+
+
+
+
+<div class="flex justify-center mt-5">
+  <button class="text-2xl bg-green-400 px-4 py-2 rounded-2xl text-black 
+  transition duration-200 delay-75 
+  hover:bg-linear-to-r hover:from-amber-400 hover:to-orange-800 
+  hover:text-white" id="submitBTN" >
+    Submit
+  </button>
+
+</div>
+
+</form>
+
+<!-- <button id="submitBTN" class="ml-20 mt-5 text-2xl bg-green-400 px-2 rounded-2xl text-black transition duration-200 delay-75 hover:bg-linear-to-r hover:from-amber-400 hover:to-orange-800 
+hover:text-white relative left-[20%]">Submit</button> -->
+
+<!-- <button  class="mt-5 text-2xl bg-green-400 px-4 py-2 rounded-2xl text-black transition duration-200 delay-75 hover:bg-linear-to-r hover:from-amber-400 hover:to-orange-800 hover:text-white block mx-auto">
+Submit
+</button> -->
+
+
+    </div> 
+
+</div>
+<div id="forAppenchild" class="h-auto w-auto grid place-items-center">
+
+</div>
+<script src="issue.js"></script>
+</body>
+</html>
