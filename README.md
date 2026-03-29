@@ -1,8 +1,8 @@
 <h1 align="center">🚌 ZengiRide - Bus Booking Website</h1>
 
-<p align="center">
-  <img src="src/photo/frontPage.jpg" alt="ZengiRide Banner" width="100%" height="250px">
-</p>
+
+  <img src="src/photo/frontPage.jpg" alt="ZengiRide Banner" width="100%" height="550px">
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
